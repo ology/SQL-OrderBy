@@ -163,8 +163,8 @@ __END__
   use SQL::OrderBy;
 
   my @order = SQL::OrderBy::toggle_resort(
-      order_by => ['name', 'artist', 'album'],
-      selected => 'artist',
+      order_by       => ['name', 'artist', 'album'],
+      selected       => 'artist',
       show_ascending => 1,
   );  # ('artist asc', 'name asc', 'album asc')
 
@@ -197,14 +197,14 @@ exist to allow compatibility with other SQL statement handling modules.
   );  # ('Name', 'Artist Desc', 'Album')
 
   my $columns = SQL::OrderBy::get_columns(
-      order_by => ['NAME', 'ARTIST DESC', 'ALBUM'],
+      order_by       => ['NAME', 'ARTIST DESC', 'ALBUM'],
       show_ascending => 1,
       uc_direction   => 1,
   );  # 'NAME ASC, ARTIST DESC, ALBUM ASC'
 
   # Fetch the columns as a name array and direction hashes.
   @columns = SQL::OrderBy::get_columns(
-      order_by => 'name, artist deSc, album',
+      order_by          => 'name, artist deSc, album',
       name_direction    => 1,
       numeric_direction => 1,
   );  # ( ['name', 'artist', 'album'],
