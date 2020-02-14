@@ -213,7 +213,7 @@ exist to allow compatibility with other SQL statement handling modules.
 
   # Output a "column direction" array.
   @columns = SQL::OrderBy::col_dir_list(
-      \@column_names, \%direction
+      [qw/name artist album/], \%direction
   );  # ('name', 'artist desc', 'album')
 
 =head1 DESCRIPTION
