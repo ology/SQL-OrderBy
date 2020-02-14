@@ -180,12 +180,10 @@ __END__
       )
   );  # 'time, artist desc, name, album'
 
+The following functions are either used by the re-sort function(s) or
+exist to allow compatibility with other SQL statement handling modules.
 
-The following functions are either used by the resort function(s)
-or exist to allow compatibility with other SQL statement handling
-modules.
-
-  %direction = SQL::OrderBy::to_asc_desc( \%direction );
+  my %direction = SQL::OrderBy::to_asc_desc( \%direction );
   # (name=>'', artist=>'desc', album=>'')
 
   %direction = SQL::OrderBy::to_asc_desc(
@@ -193,11 +191,11 @@ modules.
       show_ascending => 1
   );  # (name=>'asc', artist=>'desc', album=>'asc')
 
-  @columns = SQL::OrderBy::get_columns(
+  my @columns = SQL::OrderBy::get_columns(
       order_by => 'Name, Artist Desc, Album'
   );  # ('Name', 'Artist Desc', 'Album')
 
-  $columns = SQL::OrderBy::get_columns(
+  my $columns = SQL::OrderBy::get_columns(
       order_by => ['NAME', 'ARTIST DESC', 'ALBUM'],
       show_ascending => 1,
       uc_direction   => 1,
