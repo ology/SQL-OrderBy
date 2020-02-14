@@ -99,7 +99,7 @@ sub get_columns {
 }
 
 # Return an array of column names with their respective directions
-# concatinated.  This is conditional concatination.  ASC/DESC vs.
+# concatenated.  This is conditional concatenation.  ASC/DESC vs.
 # 1/0 issues do not concern us here.
 sub col_dir_list {
     my ($columns, $direction) = @_;
@@ -315,7 +315,7 @@ documentation, above.
   @columns = col_dir_list(\@columns, \%direction);
 
 Return an array of column names with their respective directions
-concatinated.
+concatenated.
 
 This function takes a reference to an array of column names and a
 reference to a direction hash.
@@ -329,7 +329,7 @@ reference to a direction hash.
   )
 
 Return column directions as alpha keywords in place of their numeric
-eqivalents.
+equivalents.
 
 If the direction hash contains any alpha (asc/desc) values, the
 function uses those by default.
