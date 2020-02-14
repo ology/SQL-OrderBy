@@ -2,8 +2,6 @@ package SQL::OrderBy;
 use strict;
 use warnings;
 
-use Carp;
-
 our $VERSION = '0.09';
 
 # Transform an order by clause.
