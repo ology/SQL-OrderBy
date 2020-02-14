@@ -1,4 +1,7 @@
 package SQL::OrderBy;
+
+# ABSTRACT: Transform an SQL "order by" clause
+
 use strict;
 use warnings;
 
