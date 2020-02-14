@@ -1,10 +1,10 @@
-# $Id: OrderBy.pm,v 1.5 2004/08/23 03:06:21 gene Exp $
-
 package SQL::OrderBy;
-$VERSION = '0.09';
 use strict;
 use warnings;
+
 use Carp;
+
+our $VERSION = '0.09';
 
 # Transform an order by clause.
 sub toggle_resort {
