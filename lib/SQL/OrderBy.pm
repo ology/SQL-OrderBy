@@ -157,10 +157,6 @@ sub _name_direction {
 1;
 __END__
 
-=head1 NAME
-
-SQL::OrderBy - Transform an SQL "order by" clause
-
 =head1 SYNOPSIS
 
   use SQL::OrderBy;
@@ -171,7 +167,7 @@ SQL::OrderBy - Transform an SQL "order by" clause
       show_ascending => 1,
   );  # ('artist asc', 'name asc', 'album asc')
 
-  # resort ad infinitum
+  # Re-sort ad infinitum
   $initial_order = 'name, artist, album';
   print scalar SQL::OrderBy::toggle_resort(
       selected => 'time',
