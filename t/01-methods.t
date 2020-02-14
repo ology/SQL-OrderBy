@@ -4,11 +4,7 @@ use warnings;
 
 use Test::More tests => 22;
 
-BEGIN {
-    use_ok 'SQL::OrderBy';
-# XXX export nothing
-#       , qw(get_columns to_asc_desc col_dir_list toggle_resort)
-};
+use_ok 'SQL::OrderBy';
 
 # fetch a numeric name_direction list
 my @columns = SQL::OrderBy::get_columns(
