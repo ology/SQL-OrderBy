@@ -165,7 +165,7 @@ __END__
       show_ascending => 1,
   );  # ('artist asc', 'name asc', 'album asc')
 
-  # Re-sort ad infinitum
+  # Re-sort nesting
   my $initial_order = 'name, artist, album';
   print scalar SQL::OrderBy::toggle_resort(
       selected => 'time',
