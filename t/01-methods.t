@@ -13,7 +13,7 @@ my @columns = SQL::OrderBy::get_columns(
 is scalar @columns, 0, 'empty column array';
 @columns = SQL::OrderBy::get_columns(
     order_by => '',
-);  
+);
 is scalar @columns, 0, 'empty column string';
 
 # fetch a numeric name_direction list
