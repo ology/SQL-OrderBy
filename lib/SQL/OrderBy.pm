@@ -184,7 +184,7 @@ __END__
 The following functions are either used by the re-sort function(s) or
 exist to allow compatibility with other SQL statement handling modules.
 
-  my %direction = SQL::OrderBy::to_asc_desc( \%direction );
+  my %direction = SQL::OrderBy::to_asc_desc(name => 1, artist => 0, album => 1);
   # (name=>'', artist=>'desc', album=>'')
 
   %direction = SQL::OrderBy::to_asc_desc(
