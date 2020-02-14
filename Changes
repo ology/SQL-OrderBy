@@ -1,8 +1,8 @@
 Revision history for SQL::OrderBy.
 
 {{$NEXT}}
-    - Modernized distribution.
-    - Cleaned-up POD.
+    - Modernize distribution.
+    - Improve documentation.
 
 ~
 
