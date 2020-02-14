@@ -161,14 +161,14 @@ __END__
 
   use SQL::OrderBy;
 
-  @order = SQL::OrderBy::toggle_resort(
+  my @order = SQL::OrderBy::toggle_resort(
       order_by => ['name', 'artist', 'album'],
       selected => 'artist',
       show_ascending => 1,
   );  # ('artist asc', 'name asc', 'album asc')
 
   # Re-sort ad infinitum
-  $initial_order = 'name, artist, album';
+  my $initial_order = 'name, artist, album';
   print scalar SQL::OrderBy::toggle_resort(
       selected => 'time',
       order_by => scalar SQL::OrderBy::toggle_resort(
