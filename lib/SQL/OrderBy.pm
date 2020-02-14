@@ -2,7 +2,7 @@ package SQL::OrderBy;
 use strict;
 use warnings;
 
-our $VERSION = '0.09';
+our $VERSION = '0.1000';
 
 # Transform an order by clause.
 sub toggle_resort {
