@@ -1,6 +1,8 @@
 Revision history for SQL::OrderBy
 
 {{$NEXT}}
+
+0.1000 2020-02-14 10:18:08
     - Modernize distribution.
     - Improve documentation.
 
